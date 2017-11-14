@@ -4,5 +4,13 @@
   "main": "index.js",
   "repository": "https://github.com/sesn/ultrasonic-prototype.git",
   "author": "sesn <sesankar11@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "http": "^0.0.0",
+    "nodemon": "^1.12.1",
+    "serialport": "^6.0.4",
+    "socket.io": "^2.0.4"
+  }
 }

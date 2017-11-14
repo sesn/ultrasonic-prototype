@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    kakdjk
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.17/socket.io.min.js"></script> -->
+<script src="https://cdn.socket.io/socket.io-1.0.6.js"></script>
+<script>
+    var socket = io('http://localhost', {
+        transports: ['websocket', 'polling']
+    });
+
+    socket.on('sensor_reading', function(data) {
+        console.log(data);
+    });
+</script>
+
+</html>
