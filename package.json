@@ -1,0 +1,8 @@
+{
+  "name": "ultrasonic-prototype",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sesn/ultrasonic-prototype.git",
+  "author": "sesn <sesankar11@gmail.com>",
+  "license": "MIT"
+}
