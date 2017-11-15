@@ -56,12 +56,13 @@ serialport.list(function(err, p) {
             parser.on('data', function(data) {
                 distance = data.replace('distance', '');
                 distance = distance.replace(/\n/, ' ');
-                if (distance >= 1 && distance <= 200) {
+                console.log(distance);
+                // if (distance >= 1 && distance <= 200) {
                     io.sockets.emit('sensor_reading', {
-                        ultrasonic_distance: distance
+                        ultrasonic_distance: data
                     });
-                    console.log(distance);
-                }
+                    // console.log(distance);
+                // }
                 // console.log(data);
             });
 
