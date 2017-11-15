@@ -426,7 +426,9 @@
                     keySlower = false;
                 }
                 reading = 160 -reading;
-                speed = reading * 50;
+                reading_temp = reading * 0.1;
+                speed = reading * 10 * reading_temp;
+                speed = speed / 3;
                 console.log(`speed - ${speed}`);
                 if (keyFaster) {
                     speed = Util.accelerate(speed, accel, dt);
